@@ -1,0 +1,1305 @@
+/* Fonts */
+
+/* 'Cactus Classical Serif' */
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Staatliches&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+/* 'Calistoga' */
+@import url('https://fonts.googleapis.com/css2?family=Cactus+Classical+Serif&family=Calistoga&family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Staatliches&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+/* 'Abel' */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cactus+Classical+Serif&family=Calistoga&family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Staatliches&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+/* Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Abel&family=Cactus+Classical+Serif&family=Calistoga&family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Staatliches&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+
+
+/* Tags Gerais */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: #0B0B0B;
+}
+
+* {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+    background-color: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #C8A37F;
+    border-radius: 10px;
+}
+
+:root {
+    --borderGlass: 1px solid #ffffff13;
+    --gradientLeft: linear-gradient(90deg, #000000 54%, #00000000 100%);
+    --gradientTop: linear-gradient(180deg, #000000 0, #00000000 25%);
+    --cactusFont: 'Cactus Classical Serif', serif;
+    --calistogaFont: 'Calistoga', serif;
+    --abelFont: 'Abel';
+}
+
+::selection {
+    background-color: #6E5945;
+    color: #FFEAD6;
+}
+
+.bg-historia,
+.bg-declaracao,
+.bg-musicasMarcantes {
+    min-height: 100%;
+    min-width: 100%;
+}
+
+/* Estilos Gerais */
+.gradient-text {
+    background: linear-gradient(90deg, #6E5945 25%, #C8A37F 100%);
+    background-clip: text;
+    color: transparent;
+}
+
+.gradient-top {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: var(--gradientTop);
+}
+
+.size-small {
+    font-size: 50px;
+}
+
+.music {
+    padding: 15px;
+    border: var(--borderGlass);
+    border-radius: 15px;
+    position: relative;
+    font-family: var(--abelFont);
+    user-select: none;
+
+    .music-content {
+        padding: 0 10px;
+
+        h1 {
+            font-size: 35px;
+            font-weight: 200;
+            margin: 10px 0 0 0;
+        }
+
+        .autor {
+            font-size: 19px;
+            color: #ffffff46;
+            margin: 0 0 20px 0;
+        }
+
+        .line-music {
+            width: 100%;
+            height: 4px;
+            border-radius: 50px;
+            background: linear-gradient(90deg, #737373 0%, #D9D9D9 100%);
+        }
+
+        .count-music {
+            display: flex;
+            justify-content: space-between;
+            line-height: 10px;
+            color: #ffffff;
+        }
+    }
+}
+
+.music::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(10px);
+    z-index: -1;
+    pointer-events: none;
+}
+
+.line-bottom-title {
+    background: linear-gradient(90deg, #242424 0%, #FFFFFF 100%);
+    background-clip: text;
+    color: transparent;
+    font-size: 23px;
+    letter-spacing: 5px;
+    font-weight: 800;
+    margin: 0 0 50px 0;
+}
+
+.h2-main {
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 5px;
+    margin: 0;
+}
+
+.h1-main {
+    font-family: var(--calistogaFont);
+    font-size: 70px;
+    font-weight: 400;
+    margin: 0;
+}
+
+/* Header */
+
+header {
+    position: relative;
+    z-index: 10;
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+
+        .nav-list {
+            display: flex;
+            gap: 50px;
+            border: var(--borderGlass);
+            border-radius: 50px;
+            position: relative;
+            padding: 25px 50px;
+            margin-top: 25px;
+
+            a {
+                font-family: var(--cactusFont);
+                color: #fff;
+                z-index: 1;
+                position: relative;
+                user-select: none;
+            }
+
+            a::before {
+                content: '';
+                position: absolute;
+                top: 40px;
+                left: 50%;
+                width: 0;
+                height: 4px;
+                background-color: #62503e;
+                border-radius: 50px;
+                transform: translateX(-50%);
+                transition: width 0.3s ease-out;
+            }
+
+            a:hover::before {
+                width: 100%;
+            }
+        }
+
+        .nav-list::before {
+            /* Cria um blur e não afeta os elementos filhos */
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backdrop-filter: blur(10px);
+            /* Aplica o desfoque ao fundo */
+            border-radius: 50px;
+            z-index: 1;
+            /* Coloca o pseudo-elemento atrás dos elementos filhos */
+            pointer-events: none;
+            /* Evita que o pseudo-elemento interfira em cliques */
+        }
+
+        .nav-line {
+            width: 75px;
+            height: 1px;
+            background-color: #ffffff28;
+            margin-top: 25px;
+        }
+    }
+}
+
+/* Home */
+
+.home {
+    margin-top: -100px;
+    width: 100vh;
+    height: 100vh;
+    background: url(images/bg-home2.png);
+    min-width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    /* Ajuste esse valor conforme necessário */
+
+    .gradient-left {
+        position: absolute;
+        top: 0;
+        width: 900px;
+        height: 100vh;
+        background: var(--gradientLeft);
+    }
+
+    .home-content {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 200px;
+        color: #fff;
+
+        .home-txt {
+            margin: 0 0 -50px 150px;
+            display: flex;
+            flex-direction: column;
+            gap: 300px;
+
+            h2 {
+                font-family: var(--cactusFont);
+                font-weight: 100;
+                letter-spacing: 10px;
+                line-height: 40px;
+                font-size: 18px;
+                color: #ffffffdc;
+            }
+
+            h1 {
+                font-family: var(--calistogaFont);
+                font-size: 95px;
+                font-weight: 400;
+                line-height: 100px;
+                margin: 0;
+            }
+
+            .home-form {
+                display: flex;
+                flex-direction: column;
+                gap: 20px;
+
+                p {
+                    font-size: 1.5rem;
+                    font-family: var(--abelFont);
+                    margin: 0;
+                }
+
+                .icon-arrow {
+                    animation: desceVolta 1s ease-in-out alternate infinite;
+                }
+
+                button {
+                    padding: 15px 30px 15px 30px;
+                    width: 200px;
+                    border-radius: 50px;
+                    cursor: pointer;
+                    background: none;
+                    color: #C8A37F;
+                    border: 3px solid #C8A37F;
+                    box-shadow: 0 0 10px 0px #c8a37f75;
+                    font-size: 1.5rem;
+                    font-family: var(--abelFont);
+                    font-weight: 500;
+                    transition: 0.2s ease;
+
+                    &:hover {
+                        background-color: #C8A37F;
+                        color: #31281f;
+                        box-shadow: 0 0 20px 0px #c8a37f75;
+                    }
+
+                    svg {
+                        transition: 0.2s ease;
+                    }
+
+                    &:hover svg {
+                        transform: rotate(40deg);
+                    }
+                }
+            }
+        }
+
+        .music {
+            margin: 350px 150px 0 0;
+            backdrop-filter: blur(10px);
+
+            img {
+                filter: brightness(75%);
+                transition: 0.2s ease;
+
+                &:hover {
+                    filter: none;
+                    box-shadow: 0 10px 10px 0 #ffffff0c;
+                }
+            }
+        }
+    }
+
+    .formulario {
+        background-color: transparent;
+        backdrop-filter: blur(10px);
+        border: 1px solid #ffffff17;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        position: fixed;
+        bottom: -50%;
+        left: 50%;
+        transform: translateX(-50%);
+        padding: 20px;
+        border-radius: 10px;
+        z-index: 11;
+        transition: 0.4s ease-in-out;
+
+        ::selection {
+            background-color: #ffffff0c;
+            color: #dbdbdb;
+        }
+
+        input,
+        textarea {
+            background-color: transparent;
+            color: #ffffffe7;
+            border-radius: 10px;
+            border: 1px solid #dbdbdb3f;
+            padding-left: 10px;
+            outline: none;
+            font-family: var(--cactusFont);
+        }
+
+        input {
+            height: 40px;
+        }
+
+        textarea {
+            width: 270px;
+            height: 100px;
+            padding: 10px;
+        }
+
+        button {
+            background-color: #C8A37F;
+            border-radius: 10px;
+            cursor: pointer;
+            color: #000;
+            border: none;
+            padding: 10px;
+
+            &:hover {
+                background-color: #c8a37fc4;
+            }
+        }
+    }
+}
+
+/* Máscara do Formulário */
+.mascara-formulario {
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(109deg, rgba(10, 12, 16, 0.99) 15%, rgba(10, 12, 16, 0.7) 50%, rgba(10, 12, 16, 0.99) 85%);
+    z-index: 10;
+}
+
+/* História */
+
+.historia {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .bg-historia {
+        position: relative;
+        width: 100%;
+        z-index: -1;
+        user-select: none;
+        display: block;
+    }
+
+    .historia-content {
+        position: absolute;
+        top: 5%;
+        color: #fff;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 100px;
+        margin: -50px 150px 0px 150px;
+        font-family: var(--cactusFont);
+
+        .historia-txt {
+            margin-top: 100px;
+
+            p {
+                max-width: 50vw;
+                font-size: 1.0625rem;
+                font-weight: 100;
+                color: #ffffffb7;
+            }
+
+            h2,
+            h1,
+            p,
+            .line-bottom-title {
+                animation: scrollAnimationX 5s linear;
+                animation-timeline: view();
+                animation-range: entry 0% cover 40%;
+                overflow-x: hidden;
+            }
+        }
+
+        .historia-images {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            user-select: none;
+            animation: scrollAnimationY 5s linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+            margin-top: 100px;
+
+            img {
+                filter: brightness(50%);
+                border-radius: 50px;
+                transition: 0.2s ease;
+                border: 10px solid transparent;
+                box-shadow: 0 0 2px 0 #fff;
+            }
+
+            img:hover {
+                filter: none;
+                transform: rotate(10deg);
+                border: 10px double #62503e;
+                box-shadow: 0 0 25px 0 #C8A37F;
+            }
+        }
+    }
+}
+
+/* Músicas Marcantes */
+
+.musicas-marcantes {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+
+    .bg-musicasMarcantes {
+        position: relative;
+        width: 100%;
+        z-index: -1;
+        user-select: none;
+        display: block;
+    }
+
+    .msc-content {
+        position: absolute;
+        top: 0;
+        padding: 50px 150px;
+        color: #fff;
+
+        .msc-txt {
+            margin-bottom: 20px;
+            animation: scrollAnimationX 5s linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+
+
+            h1 {
+                font-family: var(--cactusFont);
+                font-weight: 300;
+                color: #fff;
+                letter-spacing: 5px;
+
+                span {
+                    font-size: 15px;
+                    letter-spacing: 0;
+                    text-align: center;
+                    color: #ffffff69;
+                }
+            }
+        }
+
+        .msc-albuns {
+            display: flex;
+            gap: 70px;
+            animation: scrollAnimationY 5s linear;
+            animation-timeline: view();
+            animation-range: entry 0% cover 40%;
+            backdrop-filter: blur(10px);
+
+            .capa1,
+            .capa2,
+            .capa3,
+            .capa4 {
+                filter: saturate(10%);
+                transition: 0.2s ease;
+                cursor: pointer;
+
+                &:hover {
+                    filter: none;
+                    transform: scale(1.01);
+                }
+            }
+        }
+    }
+}
+
+/* Declaração de Amor */
+
+.declaracao-amor {
+    position: relative;
+    width: 100%;
+    height: 100%;
+
+    .bg-declaracao {
+        position: relative;
+        width: 100%;
+        z-index: -1;
+        user-select: none;
+        display: block;
+    }
+
+    .amor-content {
+        position: absolute;
+        top: 0;
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        margin: 50px 150px;
+        gap: 50px;
+        font-family: var(--cactusFont);
+
+        .amor-title {
+            display: flex;
+            align-items: center;
+            text-align: center;
+
+            .line {
+                position: absolute;
+                left: 0;
+                width: 83%;
+                height: 1px;
+                background-color: #fff;
+            }
+
+            .line-bottom-title {
+                margin: 0;
+            }
+        }
+
+        .amor-txt {
+            column-count: 2;
+            column-gap: 100px;
+
+            p {
+                font-size: 1.0625rem;
+                font-weight: 100;
+                color: #ffffffb7;
+            }
+        }
+    }
+}
+
+/* Letra de Iris */
+
+.iris {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 80px 0;
+
+    .vetor {
+        position: relative;
+        width: 100%;
+        z-index: -1;
+        user-select: none;
+    }
+
+    .vetor,
+    .iris-content {
+        animation: scrollAnimationFadeIn 5s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+    }
+
+    .iris-content {
+        position: absolute;
+        color: #fff;
+        backdrop-filter: blur(5px);
+
+        .iris-areaLetter {
+            border: 1px dashed #C8A37F;
+            border-radius: 10px;
+            text-align: center;
+            padding: 0 20px;
+            color: #ffffffaf;
+            font-size: 22px;
+            font-family: var(--cactusFont);
+
+            span {
+                background: linear-gradient(90deg, #6E5945 0, #C8A37F 50%);
+                background-clip: text;
+                color: transparent;
+            }
+        }
+
+        .quote {
+            /*estilo geral dos quotes*/
+            font-size: 120px;
+            background: linear-gradient(90deg, #6E5945 0, #C8A37F 100%);
+            background-clip: text;
+            color: transparent;
+            user-select: none;
+        }
+
+        .quote-top {
+            position: absolute;
+            top: -150px;
+            left: -35px;
+        }
+
+        .quote-bottom {
+            position: absolute;
+            right: -35px;
+            top: 0;
+            transform: scaleX(-1);
+        }
+    }
+}
+
+/* Biblioteca de Fotos */
+
+.biblioteca {
+    margin: 150px 150px 50px 150px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 20px;
+
+
+    .img-biblioteca {
+        position: relative;
+        border-radius: 12px;
+        transition: 0.2s ease;
+        animation: scrollAnimationY 5s linear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 20%;
+
+        &:hover {
+            transform: rotate(4deg);
+        }
+    }
+
+    .img-biblioteca img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .img-biblioteca .gradient-bottom {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #c8a37f4d 0%, #000000b0 100%);
+        z-index: 1;
+        border-radius: 10px;
+        transition: 0.2s ease;
+    }
+}
+
+/* Feliz 2 Anos */
+
+.comemoration {
+    margin: 250px 150px 100px 150px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    font-family: var(--calistogaFont);
+
+    .title-feliz {
+        display: flex;
+        align-items: end;
+        gap: 22px;
+        transform: rotate(270deg);
+
+        .line {
+            width: 85px;
+            height: 1px;
+            background-color: #fff;
+            margin-bottom: 115px;
+        }
+
+        h1 {
+            font-size: 180px;
+            font-weight: 400;
+            color: #FFEAD6;
+            margin: 0;
+        }
+    }
+
+    .img-comemoration {
+        border: 1px solid #ffffff41;
+        padding: 12px 12px 8px 12px;
+        border-radius: 10px;
+        box-shadow: 0 0 25px 0 #d9d9d911;
+
+        .img {
+            border-radius: 10px;
+            user-select: none;
+            box-shadow: 0 0 25px 0 #c8a37f11;
+            transition: transform 0.2s ease;
+
+            &:hover {
+                transform: scale(1.01);
+            }
+        }
+    }
+
+    .title-2anos {
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+        transform: rotate(90deg);
+        width: 100%;
+
+        .line {
+            width: 30px;
+            height: 1px;
+            background-color: #fff;
+            margin-bottom: 100px;
+        }
+
+        h1 {
+            font-size: 180px;
+            font-weight: 400;
+            color: #C8A37F;
+            margin: 0 0 -8px 0;
+            white-space: nowrap;
+        }
+    }
+}
+
+/* Footer */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 30px;
+
+    p {
+        color: #fff;
+        font-size: 16px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 400;
+        letter-spacing: 1px;
+        line-height: 30px;
+    }
+
+    .color {
+        color: #e6c8ab;
+    }
+
+    .font-size {
+        font-size: 18px;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+
+    img {
+        width: 100px;
+    }
+}
+
+/* Keyframes */
+
+@keyframes scrollAnimationX {
+    from {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes scrollAnimationY {
+    from {
+        opacity: 0;
+        transform: translateY(100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scrollAnimationFadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes desceVolta {
+    from {
+        transform: translateY(0px);
+    }
+
+    to {
+        transform: translateY(5px);
+    }
+}
+
+
+/* Média Queries */
+
+@media (max-width: 1790px) {
+    .historia {
+        .historia-content {
+            .historia-txt {
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .historia-images {
+            img {
+                width: 300px;
+            }
+        }
+    }
+
+    .h1-main {
+        font-size: 3.5rem;
+    }
+
+    .h2-main {
+        font-size: 1rem;
+    }
+
+    .musicas-marcantes {
+        .msc-content {
+            .msc-albuns {
+                gap: 20px;
+
+                .capa1,
+                .capa2,
+                .capa3,
+                .capa4 {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .declaracao-amor {
+        .amor-content {
+            .amor-txt {
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1565px) {
+    .home {
+        .bg-home {
+            left: 400px;
+        }
+    }
+
+    .historia {
+        .historia-content {
+            .historia-txt {
+                p {
+                    font-size: 0.88rem;
+                }
+            }
+        }
+
+        .historia-images {
+            img {
+                width: 230px;
+            }
+        }
+    }
+
+    .musicas-marcantes {
+        .msc-content {
+            margin-top: 25px;
+
+            .msc-albuns {
+                h1 {
+                    font-size: 1.7rem;
+                }
+
+                .capa1,
+                .capa2,
+                .capa3,
+                .capa4 {
+                    width: 200px;
+                }
+            }
+        }
+    }
+
+    .declaracao-amor {
+        .amor-content {
+            .amor-txt {
+                p {
+                    font-size: 0.8rem;
+                    margin-top: -30px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px) {
+
+    .home {
+        .bg-home {
+            left: 0px;
+        }
+
+        .home-content {
+            align-items: center;
+            padding-left: 100px;
+
+            .home-txt {
+                gap: 0;
+                margin: 0;
+
+                h2 {
+                    font-size: 15px;
+                }
+
+                h1 {
+                    font-size: 80px;
+                }
+            }
+
+            .music {
+                margin: 0 190px 0 0;
+
+                img {
+                    width: 250px;
+                }
+            }
+        }
+    }
+
+    .historia {
+        .historia-content {
+            margin: -50px 100px -50px 100px;
+
+            .historia-txt {
+                p {
+                    font-size: 0.7rem;
+                }
+            }
+        }
+
+        .historia-images {
+            img {
+                width: 200px;
+            }
+        }
+    }
+
+    .h1-main {
+        font-size: 3rem;
+    }
+
+    .h2-main {
+        font-size: 0.8rem;
+    }
+
+    .declaracao-amor {
+        .amor-content {
+            margin: 50px 100px;
+
+            .amor-title {
+                .line {
+                    width: 80%;
+                }
+            }
+
+            .amor-txt {
+                p {
+                    font-size: 0.66rem;
+                }
+            }
+        }
+    }
+
+    .musicas-marcantes {
+        .msc-content {
+            padding: 0;
+            margin: 0px 100px;
+
+            .msc-txt {
+                h1 {
+                    font-size: 1.2rem;
+                    margin: 15px 0 0 0;
+                }
+            }
+        }
+    }
+
+    .biblioteca {
+        margin: 150px 100px 50px 100px;
+    }
+}
+
+@media (max-width: 1150px) {
+    .home {
+        .home-content {
+            gap: 50px;
+        }
+    }
+
+    .historia {
+        .historia-content {
+            .historia-txt {
+                p {
+                    font-size: 0.55rem;
+                }
+            }
+
+            .line-bottom-title {
+                margin-bottom: 30px;
+            }
+
+            .historia-images {
+                img {
+                    width: 150px;
+                }
+            }
+        }
+    }
+
+    .h1-main {
+        font-size: 2.5rem;
+    }
+
+    .h2-main {
+        font-size: 0.6rem;
+    }
+
+    .line-bottom-title {
+        font-size: 0.8rem;
+    }
+
+    .musicas-marcantes {
+        .msc-content {
+            .msc-txt {
+                h1 {
+                    font-size: 1rem;
+                }
+            }
+
+            .msc-albuns {
+                .music {
+                    img {
+                        width: 150px;
+                    }
+
+                    h1 {
+                        font-size: 1.2rem;
+                    }
+
+                    .autor {
+                        font-size: 0.9rem;
+                    }
+
+                    .count-music {
+                        font-size: 0.7rem;
+                    }
+                }
+            }
+        }
+    }
+
+    .declaracao-amor {
+        .amor-content {
+            .amor-txt {
+                p {
+                    font-size: 0.55rem;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 960px) {
+    .home {
+        .home-content {
+            padding: 0;
+            flex-direction: row;
+            justify-content: space-around;
+            align-items: center;
+
+            .home-txt {
+                gap: 20px;
+
+                h1 {
+                    font-size: 4.5rem;
+                    line-height: 70px;
+                }
+
+                h2 {
+                    font-size: 0.8rem;
+                }
+            }
+
+            .music {
+                margin: 0;
+
+                img {
+                    width: 200px;
+                }
+
+                h1 {
+                    font-size: 1.8rem;
+                }
+
+                h2 {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    .historia {
+        .historia-content {
+            gap: 20px;
+            margin: 20px 0 0 0;
+            width: 100%;
+            justify-content: space-evenly;
+            align-items: start;
+
+            .historia-txt {
+                margin: 0;
+            }
+
+            .historia-images {
+                img {
+                    width: 130px;
+                }
+            }
+        }
+    }
+
+    .h1-main {
+        font-size: 2.3rem;
+    }
+
+    .h2-main {
+        font-size: 0.5rem;
+    }
+
+    .line-bottom-title {
+        font-size: 0.5rem;
+    }
+
+    .musicas-marcantes {
+        .msc-content {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+
+            .msc-albuns {
+                gap: 10px;
+
+                .music {
+                    img {
+                        width: 120px;
+                    }
+
+                    .music-content {
+                        padding-left: 0;
+
+                        h1 {
+                            font-size: 1rem;
+                        }
+
+                        .autor {
+                            font-size: 0.8rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .declaracao-amor {
+        .amor-content {
+            flex-direction: column;
+            margin: 0;
+            padding: 50px;
+            gap: 20px;
+
+            .amor-txt {
+                column-gap: 30px;
+            }
+
+            .amor-title {
+                .line {
+                    left: 50px;
+                    width: 70%;
+                }
+            }
+
+            .amor-txt {
+                p {
+                    font-size: 0.5rem;
+                }
+            }
+        }
+    }
+
+    .iris {
+        .iris-content {
+            .iris-areaLetter {
+                font-size: 1.2rem;
+            }
+
+            .quote-bottom {
+                right: -35px;
+                top: -20px;
+            }
+        }
+    }
+}
