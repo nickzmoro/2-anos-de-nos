@@ -829,53 +829,6 @@ footer {
     }
 }
 
-/* Keyframes */
-
-@keyframes scrollAnimationX {
-    from {
-        opacity: 0;
-        transform: translateX(-100px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes scrollAnimationY {
-    from {
-        opacity: 0;
-        transform: translateY(100px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
-
-@keyframes scrollAnimationFadeIn {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
-}
-
-@keyframes desceVolta {
-    from {
-        transform: translateY(0px);
-    }
-
-    to {
-        transform: translateY(5px);
-    }
-}
-
-
 /* Média Queries */
 
 @media (max-width: 1790px) {
